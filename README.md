@@ -40,7 +40,7 @@ The tests exercise real encoding/decoding, Unicode, encryption/password failures
 
 A real browser downloaded an encrypted PNG containing `PIXEL-LETTER-QA-20261101 · ¡Hola desde Quito! 🌋`, selected that downloaded file in the Reveal panel and recovered the exact text with a verified AES-GCM tag. The published app was checked at desktop and 390px mobile width; mobile content width equaled viewport width. Twelve Node tests pass. [Desktop screenshot](docs/screenshot.jpg) · [Mobile screenshot](docs/mobile.jpg).
 
-Live wallet consent has been reached with the public metadata identity and narrow model scope. Final user authorization and a real model call are pending; mocks are not presented as live generation evidence.
+Live OAuth authorization and one real generation succeeded on 1 November 2026. The user approved a one-day, single-model session capped at 0.01 Quest Pollen with Paid Pollen disabled. Theme: "A moonlit coastal lighthouse with orange cliffs and teal water, minimalist geometric travel poster". Pollinations returned "Lighthouse at Low Tide", 743 total tokens. The downloaded AI postcard round-tripped the encrypted text `PIXEL-LETTER-LIVE-20261101 · La luz nos guía 🌊` with verified AES-GCM authentication. [Generation](docs/live-generation.jpg) · [Reveal](docs/live-reveal.jpg) · [Actual PNG](docs/live-letter.png), test password `public-test-password`. The password is deliberately public for this non-sensitive test artifact only. No keys or user credentials are included.
 
 ## Quest submission
 

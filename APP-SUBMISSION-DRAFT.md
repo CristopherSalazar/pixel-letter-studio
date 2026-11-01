@@ -1,10 +1,8 @@
-# Submission draft — do not submit before the live model check
-
 ### App Name
 Pixel Letter
 
 ### App Description
-AI-designed PNG postcards with locally hidden messages. A Pollinations LLM creates bounded geometric artwork from a visual theme; secrets never enter the prompt. Recipients recover the original message from RGB low bits without API calls. Optional AES-GCM password encryption and integrity checks, a free offline demo, and OAuth BYOP with PKCE.
+Pollinations LLM-designed PNG postcards with locally hidden messages, optional AES-GCM encryption and OAuth BYOP. Secrets stay on the device; recipients decode without API calls. Includes a free demo.
 
 ### App URL
 https://pixel-letter-studio.cris16esl.chatgpt.site/
@@ -31,4 +29,6 @@ _No response_
 #18367
 
 ### Verification
-12 automated tests pass. Real browser PNG download/upload recovered an encrypted Unicode message. Desktop/mobile checks passed. Live Pollinations generation: PENDING — wait for user approval of the Quest-only wallet session before submitting.
+12 automated tests pass. Real browser PNG download/upload recovered an encrypted Unicode message. Desktop/mobile checks passed. Real OAuth PKCE connection and one openai/gpt-5.4-nano generation succeeded: "Lighthouse at Low Tide", 743 total tokens, under a user-approved 0.01 Quest Pollen session (Paid Pollen disabled). The downloaded AI-generated PNG recovered PIXEL-LETTER-LIVE-20261101 · La luz nos guía 🌊 with verified AES-GCM authentication.
+
+[Live test details and actual PNG](https://github.com/CristopherSalazar/pixel-letter-studio#browser-verification--1-november-2026). This uses PNG pixel steganography rather than SVG metadata; theme-only model prompts keep the secret local. Only explicit Paint with AI actions consume the user’s Pollen; embedding and revealing are free.
