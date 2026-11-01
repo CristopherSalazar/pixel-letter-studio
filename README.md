@@ -2,6 +2,8 @@
 
 [![Made with pollinations.ai](dist/badge-made-with.svg)](https://pollinations.ai/?ref=badge)
 
+**Live app:** https://pixel-letter-studio.cris16esl.chatgpt.site/
+
 AI-designed postcards with messages hidden in the **pixels of a real PNG**, not SVG metadata. Built for [Pollinations quest #18367](https://github.com/pollinations/pollinations/issues/18367).
 
 ## Use
@@ -33,6 +35,12 @@ npm run dev
 Open `http://localhost:4173`. The local demo/PNG path works offline after the assets load. OAuth requires a public HTTPS deployment with matching `oauth-client.json` identity and redirect URI. The deployed configuration targets the Site declared in `.openai/hosting.json`; self-hosters must change that document to their own public URL.
 
 The tests exercise real encoding/decoding, Unicode, encryption/password failures, damaged payloads, input boundaries, pixel invariants, recipe validation and model request/error handling. API mocks are explicitly tests, not evidence of a live model run.
+
+## Browser verification — 1 November 2026
+
+A real browser downloaded an encrypted PNG containing `PIXEL-LETTER-QA-20261101 · ¡Hola desde Quito! 🌋`, selected that downloaded file in the Reveal panel and recovered the exact text with a verified AES-GCM tag. The published app was checked at desktop and 390px mobile width; mobile content width equaled viewport width. Twelve Node tests pass. [Desktop screenshot](docs/screenshot.jpg) · [Mobile screenshot](docs/mobile.jpg).
+
+Live wallet consent has been reached with the public metadata identity and narrow model scope. Final user authorization and a real model call are pending; mocks are not presented as live generation evidence.
 
 ## Quest submission
 
