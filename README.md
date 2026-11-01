@@ -15,6 +15,12 @@ AI-designed postcards with messages hidden in the **pixels of a real PNG**, not 
 
 **Never resize, convert to JPEG or apply filters.** Messaging/social services may rewrite pixels. This tool reads its own Pixel Letter format, not arbitrary steganography. A message without a password can be read by anyone with this decoder. Hiding is not encryption and is not undetectable.
 
+## Pollinations integration source
+
+This buildless app keeps its authored browser modules in dist/. The real model request lives in [dist/art.js](dist/art.js#L83), invoked by [dist/app.js](dist/app.js#L111). Wallet authorization is [dist/auth.js](dist/auth.js). These are source files, not generated bundles.
+
+**Submitted for review:** [Pollinations #18973](https://github.com/pollinations/pollinations/issues/18973), linked to quest #18367. The automated reviewer requested direct integration links; the submission now includes the exact source and the actual AI-generated PNG. Approval remains pending.
+
 ## Privacy and billing
 
 The secret, password and PNG never go to Pollinations or an app backend. Only the visual theme goes to the model. No analytics. Google Fonts requests load typography; the Pollinations API handles wallet authorization and the requested illustration.
